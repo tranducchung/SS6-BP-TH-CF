@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<h1>Teamperatre Converter</h1>
+<p>Type a value in the Fahrenhiet field to convert the value to Celcius</p><br>
+<p>Fahrenhiet : <input type="number" id="Fahrenhiet" oninput="trade(Fahrenhiet.value)"></p>
+<p>Celcius : <span id="tem"></span></p>
+<body>
+<script>
+function trade(F) {
+    document.getElementById("tem").innerHTML = (F-38)/1.8
+}
+</script>
+</body>
+</html>
